@@ -1,0 +1,15 @@
+{
+    "require": {
+        "php": ">=5.3.3",
+        "silex/silex": "1.0.*",
+        "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev",
+        "symfony/validator": "2.1.*",
+
+        "twig/twig": ">=1.8,<2.0-dev"
+    },
+
+    "autoload": {
+        "psr-0": { "event": "src/" }
+    }
+
+}

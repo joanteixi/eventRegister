@@ -1,0 +1,99 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+<div class="intro">
+    <h1>Sinèrgies en l'entorn CRM</h1>
+
+    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero
+        unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+
+</div>
+
+<div class='row'>
+    <div class='span4'>
+        <div class='well'>
+
+            <p>Data: 4 de juliol, de 12 a 14h</p>
+
+            <p>Localització: a la Casa del Mar de Barcelona.</p>
+
+            <p><a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Veure localització »</a></p>
+        </div>
+
+    </div>
+    <div class='span8'>
+        <form class='form-horizontal' method='post' action='/'>
+            <fieldset>
+                <div id='entitat' class="control-group">
+                    <label class="control-label" for="entitat">Entitat</label>
+
+                    <div class="controls">
+                        <input type="text" name='entitat' class="input-xlarge" >
+
+                        <p class="help-block">Introdueix la entitat a la que pertanys</p>
+                    </div>
+                </div>
+                <div id="nom_1" class="control-group">
+                    <label class="control-label" for="entitat">Nom assistent 1</label>
+
+                    <div class="controls">
+                        <input type="text" name='nom_1' class="input">
+
+                        <p class="help-block">Introdueix el nom i cognoms.</p>
+                    </div>
+                </div>
+                <div id="carrec_1" class="control-group">
+                    <label class="control-label" for="entitat">Càrrec assistent 1</label>
+
+                    <div class="controls">
+                        <input type="text" name='carrec_1' class="input">
+
+                        <p class="help-block">Introdueix el càrrec.</p>
+                    </div>
+                </div>
+                <div id="nom_2" class="control-group">
+                    <label class="control-label" for="entitat">Nom assistent 2</label>
+
+                    <div class="controls">
+                        <input type="text" name='nom_2' class="input">
+
+                        <p class="help-block">Introdueix el nom i cognoms.</p>
+                    </div>
+                </div>
+                <div id="carrec_2" class="control-group">
+                    <label class="control-label" for="entitat">Càrrec assistent 2</label>
+
+                    <div class="controls">
+                        <input type="text" name='carrec_2' class="input">
+
+                        <p class="help-block">Introdueix el càrrec.</p>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Enviar dades</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal hide" id="myModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>Mapa</h3>
+    </div>
+    <div id='body-mapa' class="modal-body">
+
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+</div>
+{% endblock %}
+
+        {% block javascripts %}
+            {{ parent() }}
+            <script type="text/javascript" src="/js/contact.js"></script>
+
+{% endblock %}
