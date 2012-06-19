@@ -32,6 +32,5 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 
-$app['twig']->addGlobal('layout', $app['twig']->loadTemplate('layout.html.twig'));
 
 return $app;
