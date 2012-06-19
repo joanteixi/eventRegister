@@ -21,7 +21,7 @@ $app['mail.to'] = array('pedro@eltercer.net');
  */
 $app->register(new Silex\Provider\ValidatorServiceProvider());
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
-$app['swiftmailer.transport'] = \Swift_MailTransport::newInstance();
+//$app['swiftmailer.transport'] = \Swift_MailTransport::newInstance();
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => array(
         __DIR__ . '/../src/Event/Resources/views',
