@@ -1,0 +1,9 @@
+iframe { border: none;}
+.modal {
+    width: 800px;
+    height: 500px;
+}
+
+footer { height: 50px; padding:10px;background: #000;color: #fff}
+.container { margin-top:50px}
+.intro { margin-bottom: 50px}
