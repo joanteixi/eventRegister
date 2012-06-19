@@ -13,7 +13,7 @@ $app = new Application();
  */
 $app['debug'] = true;
 $app['mail.from'] = array('info@eltercer.net');
-$app['mail.to'] = array('joan@laiogurtera.com');
+$app['mail.to'] = array('pedro@eltercer.net');
 
 
 /**
@@ -21,7 +21,7 @@ $app['mail.to'] = array('joan@laiogurtera.com');
  */
 $app->register(new Silex\Provider\ValidatorServiceProvider());
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
-$app['swiftmailer.transport'] = \Swift_SendmailTransport::newInstance();
+$app['swiftmailer.transport'] = \Swift_MailTransport::newInstance();
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => array(
         __DIR__ . '/../src/Event/Resources/views',

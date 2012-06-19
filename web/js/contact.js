@@ -11,6 +11,8 @@ $(document).ready(function () {
                     '</div>');
 
                 $('form').find('input[type=text]').val('');
+                $('form').find('.error').removeClass('error');
+                $('form').find('.help-block').fadeOut();
 
             },
             error:function (jqXHR, textStatus, errorThrown) {
@@ -18,13 +20,9 @@ $(document).ready(function () {
                 var jsonResponse = jQuery.parseJSON(jqXHR.responseText);
                 $.each(jsonResponse.errors, function (index, value) {
                     idTag = index.replace('[', '').replace(']', '');
-                    console.log(value);
-
                     $('#' + idTag).addClass('error').find('p').html(value);
 
-                    msg += $('label[for=' + index.replace('[', '').replace(']', '') + ']').html() + ': ' + value + '\n';
                 });
-//                alert(msg);
             }
         });
         return false;

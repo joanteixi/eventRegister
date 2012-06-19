@@ -55,22 +55,25 @@ $app->post('/', function (Silex\Application $app)
                 <li>Entitat: %s</li>
                 <li>Nom 1: %s</li>
                 <li>Càrrec 1: %s</li>
+                <li>Email 1: %s</li>
                 <li>Nom 2: %s</li>
                 <li>Càrrec 2: %s</li>
+                <li>Email 2: %s</li>
+
             </ul>
 EOF
             , $contactData['entitat'],
-            $contactData['nom_1'], $contactData['carrec_1'],
-            $contactData['nom_2'], $contactData['carrec_2']
+            $contactData['nom_1'], $contactData['carrec_1'],$contactData['email_1'],
+            $contactData['nom_2'], $contactData['carrec_2'],$contactData['email_2']
         );
 
         $message = \Swift_Message::newInstance()
-            ->setSubject('[CMS El tercer] Missatge rebut')
+            ->setSubject('[Sinergies El tercer] Inscripció nova')
             ->setFrom($app['mail.from'])
             ->setTo($app['mail.to'])
-            ->setBody($body);
+            ->setBody($body, 'text/html');
 
-         $app['mailer']->send($message);
+        $app['mailer']->send($message);
 
         return $app->json(array('msg' => 'El teu missatge s\'ha enviat correctament'), 200, array('content-type' => 'application/json'));
     } else {
