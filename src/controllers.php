@@ -75,6 +75,13 @@ EOF
 
         $app['mailer']->send($message);
 
+        //save in txt file... future in csv
+        $file = fopen(__DIR__.'/contacts.txt', 'a' );
+        fwrite($file, '******* ' . date('d-m-Y') . "********\n");
+        fwrite($file, $body);
+        fwrite($file, "\n******* END FIELD ********\n");
+        fclose($file);
+
         return $app->json(array('msg' => 'El teu missatge s\'ha enviat correctament'), 200, array('content-type' => 'application/json'));
     } else {
         $jsonerr = array();
