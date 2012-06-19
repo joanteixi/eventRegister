@@ -56,8 +56,8 @@ EOF
 
         $message = \Swift_Message::newInstance()
             ->setSubject('[CMS El tercer] Missatge rebut')
-            ->setFrom('info@eltercer.net')
-            ->setTo('joan@laiogurtera.com')
+            ->setFrom($app['mail.from'])
+            ->setTo($app['mail.to'])
             ->setBody($body)
                 ;
 
