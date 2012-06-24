@@ -13,7 +13,7 @@ $app = new Application();
  */
 $app['debug'] = false;
 $app['mail.from'] = array('info@eltercer.net');
-$app['mail.to'] = array('pedro@eltercer.net');
+$app['mail.to'] = array('joan@laiogurtera.com');
 
 
 /**
