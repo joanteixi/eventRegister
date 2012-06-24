@@ -11,7 +11,7 @@ $app = new Application();
 /**
  * Configuration
  */
-$app['debug'] = true;
+$app['debug'] = false;
 $app['mail.from'] = array('info@eltercer.net');
 $app['mail.to'] = array('pedro@eltercer.net');
 
