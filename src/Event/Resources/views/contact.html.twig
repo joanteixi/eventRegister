@@ -2,6 +2,53 @@
 {% block body %}
 <div class="intro">
     <h1>Sinèrgies entorn CRM per a entitats del Tercer Sector</h1>
+
+    <div class='description'>
+        <p>Més enllà de la situació de crisi que estem patint, s’està produint a les entitats del Tercer Sector,
+            sobretot en aquelles d’unes dimensions mitjanes/petites, un canvi en el model de gestió de recursos: de
+            “molt de pocs” (AA.PP., Obres Socials) a un model de “poc de molts” (recursos privats, particulars o
+            empreses) que estan exigint de les entitats una estructura tecnològica orientada a la gestió de la relació
+            amb aquests perfils – actuals o potencials – a la què en podríem dir “entorn CRM”.</p>
+
+        <p>Si a aquesta situació afegim la multiplicitat de canals de comunicació que van apareixent i que cal valorar
+            (formularis, xarxes socials, Whatsapp, email, ...), la necessitat d’integrar en aquest procés de relació
+            d’altres grups vinculats a les entitats (voluntaris, usuaris, ...) i una complexitat de gestió que no és
+            directament proporcional al volum de recursos de l’entitat, tot plegat es converteix en una problemàtica
+            habitual a les entitats del sector (a Catalunya i a la resta de l’Estat).</p>
+
+        <p>Des de l’experiència de més de 10 anys vinculats al món de les tecnologies de la informació, el CRM i la
+            comunicació multicanal a les organitzacions, desprès de la valoració de les diverses fórmules i tecnologies
+            utilitzades per les entitats del sector i, fonamentalment, donant continuïtat a processos de valoració de
+            les necessitats en l’entorn CRM d’entitats com Amics de la Gent Gran, Arrels Fundació o Fundación Adsis,
+            volem valorar les possibles sinèrgies entre entitats del Tercer Sector per tal d’implementar eines comunes a
+            l’entorn CRM.</p>
+
+        <p>És per aquest motiu pel què us convoquem a una sessió de treball – on, de manera genèrica, volem presentar,
+            valorar i discutir amb vosaltres qüestions com:</p>
+        <ul>
+
+
+            <li>La situació actual de les plataformes de gestió de la relació amb socis, donants, voluntaris, equip,
+                premsa, ...
+            </li>
+            <li>Elements comuns (dades, processos, canals, funcionalitats) a les entitats del sector.</li>
+            <li>Estalvis de cost; accessibilitat a solucions òptimes en l’entorn CRM.</li>
+            <li>D’un “lobby” d’entitats amb més visibilitat, capacitat de negociació de preus, servei, funcionalitats,
+                evolució de la plataforma, ...
+            </li>
+            <li>Debilitats, Amenaces, Fortaleses i Oportunitats.</li>
+            <li>Primeres valoracions i voluntats de les entitats presents per avançar en aquest procés.</li>
+        </ul>
+
+        <p>Com podeu veure, NO es tracta d’una presentació d’eina o serveis, ans al contrari, es tracta de valorar si
+            des del Tercer Sector es pot engegar una iniciativa que demani dels proveïdors la proposta i plantejament
+            més adequats i òptims per a les entitats que hi formin part.</p>
+
+        <p>Ens caldria confirmar la vostra assistència; ho podeu fer al formulari que trobareu al peu d’aquestes línies
+            o enviant un correu a info@eltercer.net, tot detallant el nom de la vostra entitat i les persones (i
+            càrrecs) que teniu previst que hi assisteixin.</&lt;p>
+
+    </div>
 </div>
 
 <div class='row'>
@@ -23,7 +70,7 @@
                     <label class="control-label" for="entitat">Entitat</label>
 
                     <div class="controls">
-                        <input type="text" name='entitat' class="input-xlarge" >
+                        <input type="text" name='entitat' class="input-xlarge">
 
                         <p class="help-block">Introdueix la entitat a la que pertanys *</p>
                     </div>
@@ -105,16 +152,16 @@
 
         <h3>Mapa</h3>
 
-        <a target='_blank' href="https://maps.google.com/maps?q=Casa+del+Mar+de+Barcelona,+Calle+de+Albareda,+Barcelona,+Espa%C3%B1a&hl=ca&ie=UTF8&ll=41.37366,2.173877&spn=0.050561,0.077162&sll=37.0625,-95.677068&sspn=54.005807,79.013672&oq=casa+del+mar+barcelona&t=w&hq=Casa+del+Mar&hnear=Carrer+d'Albareda,+08004+Barcelona,+Catalunya,+Espanya&z=14&output=embed">Obrir en una nova pestanya</a>
+        <a target='_blank'
+           href="https://maps.google.com/maps?q=Casa+del+Mar+de+Barcelona,+Calle+de+Albareda,+Barcelona,+Espa%C3%B1a&hl=ca&ie=UTF8&ll=41.37366,2.173877&spn=0.050561,0.077162&sll=37.0625,-95.677068&sspn=54.005807,79.013672&oq=casa+del+mar+barcelona&t=w&hq=Casa+del+Mar&hnear=Carrer+d'Albareda,+08004+Barcelona,+Catalunya,+Espanya&z=14&output=embed">Obrir
+            en una nova pestanya</a>
     </div>
-    <div id='body-mapa' class="">
-
-    </div>
+    <div id='body-mapa'></div>
 </div>
 {% endblock %}
 
-        {% block javascripts %}
-            {{ parent() }}
-            <script type="text/javascript" src="/js/contact.js"></script>
+{% block javascripts %}
+{{ parent() }}
+<script type="text/javascript" src="/js/contact.js"></script>
 
 {% endblock %}
