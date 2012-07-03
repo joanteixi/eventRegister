@@ -8,7 +8,7 @@ use Symfony\Component\Validator\Constraints;
  */
 $app->get('/', function (Silex\Application $app)
 {
-    return $app['twig']->render('contact.html.twig');
+    return $app['twig']->render('no-events.html.twig');
 
 });
 

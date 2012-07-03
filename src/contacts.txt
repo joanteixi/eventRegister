@@ -1,0 +1,10 @@
+******* 19-06-2012********            <ul>
+                <li>Entitat: dwdw</li>
+                <li>Nom 1: Joan Teixidó</li>
+                <li>Càrrec 1: </li>
+                <li>Email 1: joan@laiogurtera.com</li>
+                <li>Nom 2: </li>
+                <li>Càrrec 2: </li>
+                <li>Email 2: </li>
+
+            </ul>******* END FIELD ********
